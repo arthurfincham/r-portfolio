@@ -1,3 +1,6 @@
+<% if mobile? %>
+<%= render 'shared/mobile' %>
+<% else %>
 <div class="card-box-container">
   <%= render 'shared/nav' %>
   <div class="tab-content">
@@ -7,3 +10,4 @@
     <%= render 'shared/projects' %>
   </div>
 </div>
+<% end %>

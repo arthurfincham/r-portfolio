@@ -28,6 +28,14 @@ font-size: 3em;
   width: 45ch;
 }
 
+@media only screen and (max-width:800px){
+.mobile-headers{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+}
+
 .repo-link{
   width: auto;
   display: flex;

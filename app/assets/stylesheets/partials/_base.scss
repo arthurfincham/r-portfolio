@@ -10,6 +10,15 @@ body{
   background-color: #FA8C1E;
 }
 
+@media only screen and (max-width: 800px) {
+  body{
+    overflow: scroll;
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
 .card-box-container{
   border: 3px solid black;
   width: 70vw;
@@ -21,3 +30,11 @@ body{
 
 .card-box-container::-webkit-scrollbar {
   display: none;}
+
+
+.welcome-page-mobile{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
