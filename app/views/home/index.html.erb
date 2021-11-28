@@ -1,3 +1,9 @@
-<% @projects.each do |project| %>
-<%= project.description %>
-<% end %>
+<div class="card-box-container">
+  <%= render 'shared/nav' %>
+  <div class="tab-content">
+    <%= render 'shared/about' %>
+    <%= render 'shared/education' %>
+    <%= render 'shared/experience' %>
+    <%= render 'shared/projects' %>
+  </div>
+</div>

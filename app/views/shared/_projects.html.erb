@@ -1,0 +1,28 @@
+<div class="tab-pane fade show active" id="projects">
+  <% @projects.each do |project| %>
+    <div class="row flex-nowrap">
+      <div class="stack-icons col-1 col-md-auto">
+        <% arr = project.icons.split(',') %>
+        <% arr.each do |icon| %>
+          <i class="<%= icon %>"></i>
+        <% end %>
+      </div>
+      <div class="col-md-auto">
+      <div class="d-flex flex-row justify-content-between project-headers">
+      <div class="d-flex flex-column">
+        <h1><%= project.title %></h1>
+        <h5 class="text-muted"><%= project.sub_title %></h5>
+      </div>
+        <div class="repo-link">
+        <a href="<%= project.repo_link%>" target="_blank">
+          <i class="devicon-github-original-wordmark"></i>
+        </a>
+      </div>
+      </div>
+        <p class="fs-5 col-md-8"><%= project.description %></p>
+      </div>
+      
+    </div>
+    <hr class="col-8 mb-5" />
+  <% end %>
+</div>

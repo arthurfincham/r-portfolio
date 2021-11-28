@@ -14,3 +14,197 @@
  *= require_self
  */
 @import 'bootstrap/scss/bootstrap';
+
+/* #region  TYPOGRAPHY */
+@font-face {
+  font-family: 'BiotifBlack';
+  src: asset-url('Biotif-Black.ttf');
+}
+
+@font-face {
+  font-family: 'BiotifBold';
+  src: asset-url('Biotif-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'BiotifBook';
+  src: asset-url('Biotif-Book.ttf');
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+background-image: url('../images/bg-image.png');
+}
+
+
+p, li {
+  font-family: 'BiotifBook';
+  max-width: 45ch;
+}
+
+
+li a {
+  font-family: 'BiotifBold';
+  letter-spacing: .1em;
+  color: black !important;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'BiotifBlack';
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small, .text_small {
+  font-size: 0.8rem;
+}
+
+/* #endregion */
+
+.nav-tabs{
+  margin-top: .5em;
+}
+#first-tab{
+margin-left: .5em;
+}
+.tab-pane{
+  padding: 2em;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FA8C1E;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+h1:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card-box-container{
+  border: 3px solid black;
+  width: 70vw;
+  height: 80vh;
+  overflow: scroll;
+  border-radius: 20px;
+  background: white;
+}
+
+.card-box-container::-webkit-scrollbar {
+  display: none;}
+
+.nav-icons{
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.devicon-link{
+  text-decoration: none !important;
+  color: black;
+}
+.devicon{
+  font-size: 2em;
+  margin-right: .5em;
+}
+
+
+
+.stack-icons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stack-icons > * {
+font-size: 3em;
+margin-left: .5em;
+margin-right: .5em
+}
+
+@media only screen and (max-width: 900px) {
+.stack-icons > * {
+font-size: 2.5em;
+margin: 0;
+  }  
+}
+
+.project-headers{
+  width: 45ch;
+}
+
+.repo-link{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-link > * {
+font-size: 3em;
+text-decoration: none;
+color: rgb(175, 175, 175);
+}
+
+
+.btn{
+  border: 5px dotted #FA8C1E !important;
+  font-family: 'BiotifBold';
+}
+
+.project-repo{
+  text-decoration: none;
+}
+
+.project-repo > * {
+  font-size: 4em;
+  color: lightgrey;
+}
+
+.project-headers{
+  width: 45ch;
+}
