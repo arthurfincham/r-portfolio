@@ -1,0 +1,60 @@
+
+
+.devicon-link{
+  text-decoration: none !important;
+  color: black;
+}
+.devicon{
+  font-size: 2em;
+  margin-right: .5em;
+}
+
+
+
+.stack-icons{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stack-icons > * {
+font-size: 3em;
+}
+
+
+.project-headers{
+  width: 45ch;
+}
+
+.repo-link{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-link > * {
+font-size: 3em;
+text-decoration: none;
+color: rgb(175, 175, 175);
+}
+
+
+.btn{
+  border: 5px dotted #FA8C1E !important;
+  font-family: 'BiotifBold';
+}
+
+.project-repo{
+  text-decoration: none;
+}
+
+.project-repo > * {
+  font-size: 4em;
+  color: lightgrey;
+}
+
+.project-headers{
+  width: 45ch;
+}
