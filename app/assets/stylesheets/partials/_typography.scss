@@ -19,6 +19,12 @@ p, li {
   max-width: 45ch;
 }
 
+@media only screen and (max-width: 800px){
+  p {
+    margin-right: 1em;
+  }
+}
+
 
 li a {
   font-family: 'BiotifBold';

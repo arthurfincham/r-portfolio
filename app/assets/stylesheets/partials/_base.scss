@@ -12,7 +12,9 @@ body{
 
 @media only screen and (max-width: 800px) {
   body{
-    overflow: scroll;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
     display: block;
     padding-left: 1em;
     padding-right: 1em;
@@ -38,6 +40,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 15vh;
 }
 
 .mobile-anchors{
@@ -51,4 +54,10 @@ body{
   a i{
     color: #FA8C1E;
   }
+}
+
+hr {
+  opacity: 0.75;
+  background-color: #fff;
+	border-top: 4px dotted #FA8C1E;
 }

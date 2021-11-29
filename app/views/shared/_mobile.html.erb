@@ -1,47 +1,46 @@
 <div class="welcome-page-mobile">
-<div class="nav-icons">
+  <div class="nav-icons">
     <a class="devicon-link" target="blank" href="https://www.linkedin.com/in/arthurfincham"><i class="devicon devicon-linkedin-plain"></i> </a>
     <a class="devicon-link" target="blank" href="https://github.com/arthurfincham"><i class="devicon devicon-github-original"></i> </a>
   </div>
   <h1>Arthur Fincham</h1>
-
   <p class="fs-5 col-md-8">
-    I am a hard-working and ambitious developer based in London. Looking for a job whereI can make a real contribution while refining my
+    I am a hard-working and ambitious developer based in London. Looking for a job where I can make a real contribution while refining my
     programming skills.
   </p>
   <a class="mobile-anchors" href="#education">Education</a>
   <a class="mobile-anchors" href="#experience">Experience</a>
   <a class="mobile-anchors" href="#projects">Projects</a>
 </div>
-<hr id="education" class="col-3 col-md-2 mb-5" />
-<h2 >Education</h2>
-<hr class="col-3 col-md-2 mb-5" />
+<div id="education"></div>
+<h2 class="mt-5" >Education</h2>
+<hr class="col-6 col-md-2 mb-5" />
 <h3>Makers Academy</h3>
 <h5 class="text-muted">2021</h5>
-<p class="fs-5 col-md-8">16 week highly selective development bootcamp;</p>
+<p class="fs-6 col-md-8">16 week highly selective development bootcamp;</p>
 <ul>
-  <li class="fs-5">OOP, TDD, MVC, DDD</li>
-  <li class="fs-5">Agile/XP</li>
-  <li class="fs-5">Ruby, Rails, JavaScript</li>
-  <li class="fs-5">RSpec, Jasmine</li>
+  <li class="fs-6">OOP, TDD, MVC, DDD</li>
+  <li class="fs-6">Agile/XP</li>
+  <li class="fs-6">Ruby, Rails, JavaScript</li>
+  <li class="fs-6">RSpec, Jasmine</li>
 </ul>
 <hr class="col-3 col-md-2 mb-5" />
 <h3>King's College London</h3>
 <h4>BA Philosophy</h4>
 <h5 class="text-muted">2018-2021</h5>
-<p class="fs-5 col-md-8">First Class Honours</p>
+<p class="fs-6 col-md-8">First Class Honours</p>
 <ul>
-  <li class="fs-5">Thesis on The Consequences of Determinism for Moral Responsibility.</li>
-  <li class="fs-5">Modules in Elementary Logic & Philosophical Logic</li>
-  <li class="fs-5">Half of my degree was spent at home due to Covid, which threw me into the deep end of working remotely!</li>
+  <li class="fs-6">Thesis on The Consequences of Determinism for Moral Responsibility.</li>
+  <li class="fs-6">Modules in Elementary Logic & Philosophical Logic</li>
+  <li class="fs-6">Half of my degree was spent at home due to Covid, which threw me into the deep end of working remotely!</li>
 </ul>
-<hr id="experience" class="col-3 col-md-2 mb-5" />
-<h2 >Experience</h2>
-<hr class="col-3 col-md-2 mb-5" />
+<div id="experience" ></div>
+<h2 class="mt-5">Experience</h2>
+<hr class="col-7 col-md-2 mb-5" />
 <h3>Roger Gracie Academy</h3>
 <h4>Front Desk</h4>
 <h5 class="text-muted">Nov 2019 - Aug 2021</h5>
-<p class="fs-5 col-md-8">
+<p class="fs-6 col-md-8">
   For my last few years at university I worked at Roger Gracie Academy, a world famous Brazilian Jiu Jitsu academy in London. My
   responsibilities include carrying out duties at the front desk and building and maintaining the academy's website. As well as working
   there, I have been training for around 3 years.
@@ -50,7 +49,7 @@
 <h3>Torni's Kitchen</h3>
 <h4>Chef/Owner</h4>
 <h5 class="text-muted">Jul 2016 - April 2019</h5>
-<p class="fs-5 col-md-8">
+<p class="fs-6 col-md-8">
   When I was 17 I set up a food stall for Notting Hill Carnival. Over the years my love for cooking turned into a small catering company
   that I ran, doing dinner parties and small events for people around London. I set up the business myself and have learnt the ropes of
   hospitality and management on the job. We catered for anything from 4 to 30 people.
@@ -59,28 +58,27 @@
 <h3>Hat Trick Productions</h3>
 <h4>Floor Runner</h4>
 <h5 class="text-muted">May 2016 - June 2016</h5>
-<p class="fs-5 col-md-8">
+<p class="fs-6 col-md-8">
   Over 6 weeks I worked as a runner during the production of Episodes, Showtime & BBC. Logistics and maintaining the smooth flow of the
   shoot were my main responsibilities. Being a team player amongst a crew of around 40 was essential, whilst strong motivation and diplomacy
   were needed for the early starts and long hours each day.
 </p>
-<hr id="projects" class="col-3 col-md-2 mb-5" />
-<h2 id="projects">Projects</h2>
-<hr class="col-3 col-md-2 mb-5" />
+<div id="projects"></div>
+<h2 class="mt-5">Projects</h2>
+<hr class="col-5 col-md-2 mb-5" />
 <% @projects.each do |project| %>
   <div class="row flex-nowrap mobile-headers">
     <div class="col-md-auto">
       <h3><%= project.title %></h3>
       <h5 class="text-muted"><%= project.sub_title %></h5>
     </div>
-    
   </div>
-  <p class="fs-5 col-md-8"><%= project.description %></p>
+  <p class="fs-6 col-md-8"><%= project.description %></p>
   <div class="repo-link">
-      <a href="<%= project.repo_link%>" target="_blank">
-        <i class="devicon-github-original-wordmark"></i>
-      </a>
-    </div>
+    <a href="<%= project.repo_link%>" target="_blank">
+      <i class="devicon-github-original-wordmark"></i>
+    </a>
+  </div>
 </div>
 </div>
 <hr class="col-8 mb-5" />
