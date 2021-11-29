@@ -46,7 +46,6 @@ body{
 .mobile-anchors{
   color: black;
   font-family: 'BiotifBold';
-  font-size: 1.2em;
   text-decoration-color: #FA8C1E;
 }
 
@@ -60,4 +59,8 @@ hr {
   opacity: 0.75;
   background-color: #fff;
 	border-top: 4px dotted #FA8C1E;
+}
+
+#my_name{
+  // font-size: 0.4em !important;
 }
